@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name" : "Inpulsify",
+    "version": "1",
+
+    "description": "A detector for biases",
+    "browser_action": {
+	"default_icon": "Img/logo2.png",
+	"default_popup": "popup.html"
+	},
+    "permissions" : [
+	"activeTab"
+	],
+    "content_scripts" : [
+	{
+	    "matches":["<all_urls>"],
+	    "js":["jquery-2.1.4.min.js", "content.js"]
+	}
+    ]
+}
